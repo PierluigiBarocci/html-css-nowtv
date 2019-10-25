@@ -27,6 +27,12 @@ a {
 main {
     padding-top: 60px;
 }
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
 /*** fine regole layout base ***/
 
 /*** header ***/
@@ -131,7 +137,10 @@ header {
     margin-left: 20px;
     font-weight: normal;
 }
-
+#movies {
+    background-color: #022b42;
+    border: none;
+}
 #movies img {
     max-width: 100%;
     border-right: 5px solid white;
@@ -140,6 +149,22 @@ header {
 #movies .col-lg-3:last-child img {
     border-right: none;
 }
+/* fine movies */
+
+/* inizio Why */
+#why {
+    background-color: #022b42;
+    text-align: center;
+    color: #fff;
+    height: 504px;
+}
+#why h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+
+}
+}
+/* fine Why */
 
 @media screen and (max-width: 1440px) {
     #jumbo {
@@ -186,7 +211,7 @@ header {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
 
     #accedi {
         background: transparent;
@@ -215,12 +240,13 @@ header {
     #movies .col-lg-3:nth-child(3) {
         display: none;
     }
+
     #movies .col-lg-3 {
         width: 50%;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
 
     header {
         height: 50px;
@@ -261,15 +287,13 @@ header {
     #ribbon .button {
         margin-left: 0;
     }
-    #movies .col-lg-3:nth-child(3) {
-        display: none;
-    }
+    
     #movies .col-lg-3 {
         width: 50%;
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
     #movies .col-lg-3:nth-child(2) {
         display: none;
     }
