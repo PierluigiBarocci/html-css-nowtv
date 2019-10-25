@@ -186,6 +186,30 @@ header {
 
 /* fine Why */
 
+/* inizio Sport */
+#sport {
+    background-color: #1C5EEA;
+    text-align: center;
+    color: #fff;
+}
+#sport h1 {
+    text-transform: uppercase;
+    font-size: 28px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+#button-cont {
+    padding-bottom: 50px;
+}
+#button-cont .button {
+    padding: 13px 40px;
+    line-height: 1;
+    font-size: 14px;
+}
+#sport img {
+    max-width: 100%;
+}
+/* fine sport */
 @media screen and (max-width: 1440px) {
     #jumbo {
         height: 650px;
