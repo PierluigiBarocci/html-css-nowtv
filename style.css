@@ -139,7 +139,7 @@ header {
 }
 #movies {
     background-color: #022b42;
-    border: none;
+    height: 100%;
 }
 #movies img {
     max-width: 100%;
@@ -156,21 +156,40 @@ header {
     background-color: #022b42;
     text-align: center;
     color: #fff;
-    height: 504px;
 }
 #why h1 {
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 32px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+#why h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+#why .container .col-lg-4 {
+    padding: 0 20px 30px 20px;
+}
+#why .container {
+    padding-bottom: 50px;
+}
+#why img {
+    height: 90px;
+    width: 90px;
+}
+#why p {
+    line-height: 1.5;
+    font-size: 15px;
+}
 
-}
-}
 /* fine Why */
 
 @media screen and (max-width: 1440px) {
     #jumbo {
         height: 650px;
     }
-
     #jumbo-text {
         left: 50px;
     }
@@ -180,7 +199,6 @@ header {
     #movies .col-lg-3 {
         width: calc(100% / 3);
     }
-
 }
 
 @media screen and (max-width: 1300px) {
@@ -244,6 +262,7 @@ header {
     #movies .col-lg-3 {
         width: 50%;
     }
+
 }
 
 @media screen and (max-width: 769px) {
@@ -287,10 +306,15 @@ header {
     #ribbon .button {
         margin-left: 0;
     }
-    
+
     #movies .col-lg-3 {
         width: 50%;
     }
+    #why h1 {
+        font-size: 26px;
+        padding-top: 50px;
+    }
+
 }
 
 @media screen and (max-width: 426px) {
@@ -304,5 +328,14 @@ header {
     #movies img {
         border-right: none;
     }
-
+    #why .col-lg-4 {
+        width: 100%
+    }
+    #why {
+        padding: 0;
+    }
+    #why img {
+        height: 70px;
+        width: 70px;
+    }
 }
