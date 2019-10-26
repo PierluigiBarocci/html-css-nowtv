@@ -268,7 +268,7 @@ footer li {
     text-decoration: underline;
 }
 
-/* finfe footer */
+/* fine footer */
 
 @media screen and (max-width: 1440px) {
     #jumbo {
@@ -346,7 +346,27 @@ footer li {
     #movies .col-lg-3 {
         width: 50%;
     }
+    footer {
+        text-align: center;
+    }
+    footer img {
+        padding-bottom: 30px;
+    }
 
+    #footer-top li {
+        padding: 15px 0px;
+        margin-right: 20px;
+        border-top: 1px solid lightgrey;
+    }
+    #footer-top li:nth-last-child(1) {
+        border-bottom: 1px solid lightgrey;
+    }
+    #social-buttons {
+        padding: 40px 0 20px 0;
+    }
+    #footer-bottom {
+        padding: 20px 0;
+    }
 }
 
 @media screen and (max-width: 769px) {
@@ -403,6 +423,22 @@ footer li {
 @media screen and (max-width: 700px) {
     #why .col-lg-4 {
         width: 100%
+    }
+    #footer-top .col-lg-3 {
+        width: 100%;
+        text-align: center;
+    }
+    #footer-top li {
+        margin: 0;
+    }
+    #footer-top i {
+        padding: 0px 10px;
+    }
+    #footer-bottom {
+        width: 100%;
+    }
+    footer {
+        padding: 20px 20px;
     }
 }
 @media screen and (max-width: 426px) {
